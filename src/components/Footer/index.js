@@ -3,7 +3,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -88,19 +87,19 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>SHIVAKUMAR M SHETTY</Logo>
+        <Logo>ಶ್ರೀ ಈಶ್ವರ ಮಾರಿಕಾಂಬ ದೇವಸ್ಥಾನ ಕಳವಾಡಿ ಬೈಂದೂರು</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#about">ಮುಖಪುಟ</NavLink>
+          <NavLink href="#Events1">ಕಾರ್ಯಕ್ರಮ</NavLink>
+          <NavLink href="#sevas">ಸೇವೆಗಳು</NavLink>
+          <NavLink href="#projects">ಫೋಟೋ/ವಿಡಿಯೋಗಳು</NavLink>
+          <NavLink href="#contacts">ಸಂಪರ್ಕಿಸಿ</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon target="display"><FacebookIcon /></SocialMediaIcon>
+          <SocialMediaIcon target="display"><TwitterIcon /></SocialMediaIcon>
+          <SocialMediaIcon target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2023 MP SHETTY. All rights reserved.

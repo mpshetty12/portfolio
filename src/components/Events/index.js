@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { skills } from '../../data/constants'
+import { Events } from '../../data/constants'
 
 const Container = styled.div`
 display: flex;
@@ -47,7 +47,7 @@ export const Desc = styled.div`
     }
 `;
 
-const SkillsContainer = styled.div`
+const EventContainer = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@ const SkillsContainer = styled.div`
   justify-content: center;
 `
 
-const Skill = styled.div`
+const Event1 = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
@@ -72,11 +72,9 @@ const Skill = styled.div`
     max-width: 330px;
     padding: 10px 36px;
   }
-
-
 `
 
-const SkillTitle = styled.h2`
+const EventTitle = styled.h2`
   font-size: 28px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
@@ -84,15 +82,16 @@ const SkillTitle = styled.h2`
   text-align: center;
 `
 
-const SkillList = styled.div`
+const EventList = styled.div`
   display: flex;
   justify-content: center; 
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
+  color: ${({ theme }) => theme.text_secondary};
 `
 
-const SkillItem = styled.div`
+const EventItem = styled.div`
   font-size: 16px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 80};
@@ -113,38 +112,33 @@ const SkillItem = styled.div`
   }
 `
 
-const SkillImage = styled.img`
+const EventImage = styled.img`
   width: 24px;
   height: 24px;
 `
 
 
-const Skills = () => {
+const Eventss = () => {
   return (
-    <Container id="skills">
+    <Container id="Events1">
       <Wrapper>
-        <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.
+        <Title>ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು</Title>
+        <Desc>ಈ ತಿಂಗಳ ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು.
         </Desc>
-        <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+        <EventContainer>
+          {Events.map((Event) => (
+            <Event1>
+              <EventTitle>{Event.title}</EventTitle>
+              <EventList>
+                {Event.desc}
+              </EventList>
+            </Event1>
           ))}
 
-        </SkillsContainer>
+        </EventContainer>
       </Wrapper>
     </Container>
   )
 }
 
-export default Skills
+export default Eventss

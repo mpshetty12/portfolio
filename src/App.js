@@ -5,14 +5,11 @@ import Navbar from "./components/Navbar";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import HeroSection from "./components/HeroSection";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Eventss from "./components/Events/index.js";
+import Clicks from "./components/Clicks/index.js";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import ProjectDetails from "./components/ProjectDetails";
+import Sevas from "./components/Sevas/index.js";
 import styled from "styled-components";
 
 const Body = styled.div`
@@ -37,18 +34,15 @@ function App() {
         <Body>
           <HeroSection />
           <Wrapper>
-            <Skills />
-            <Experience />
+            <Eventss />
+            <Sevas/>
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Clicks openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
-            <Education />
             <Contact />
           </Wrapper>
           <Footer />
-          {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          
         </Body>
       </Router>
     </ThemeProvider>
