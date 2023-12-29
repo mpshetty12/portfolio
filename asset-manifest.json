@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marikambakalavady/static/css/main.bf538fe7.css",
-    "main.js": "/marikambakalavady/static/js/main.63b22eb2.js",
+    "main.js": "/marikambakalavady/static/js/main.d71d5a65.js",
     "static/media/HeroImage.jpg": "/marikambakalavady/static/media/HeroImage.0aac4afcf7602830ea4a.jpg",
     "index.html": "/marikambakalavady/index.html",
     "main.bf538fe7.css.map": "/marikambakalavady/static/css/main.bf538fe7.css.map",
-    "main.63b22eb2.js.map": "/marikambakalavady/static/js/main.63b22eb2.js.map"
+    "main.d71d5a65.js.map": "/marikambakalavady/static/js/main.d71d5a65.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.63b22eb2.js"
+    "static/js/main.d71d5a65.js"
   ]
 }
